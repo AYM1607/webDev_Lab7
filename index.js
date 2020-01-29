@@ -52,7 +52,13 @@ app.post("/blog-api/nuevo-comentario", jsonParser, (req, res) => {
     _id: uuid.v4(),
     fecha: new Date().getTime()
   };
-  PostMethods.create(post).then(_response => res.status(201).json(post));
+  PostMethods.create(post)
+    .then(_response => res.status(201).json(post))
+    .catch(error => {
+      console.log(error);
+      res.statusMessage = "Internal server error";
+      return res.status(500).send();
+    });
 });
 
 app.delete("/blog-api/remover-comentario/:id", (req, res) => {
