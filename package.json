@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "A blog CRUD API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && open http://localhost:8080 && nodemon index.js",
+    "startLegacy": "npm install && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AYM1607/webDev_Lab6.git"
+  },
+  "author": "AYM1607",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AYM1607/webDev_Lab6/issues"
+  },
+  "homepage": "https://github.com/AYM1607/webDev_Lab6#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.10",
+    "morgan": "^1.9.1",
+    "uuid": "^3.4.0"
+  }
+}

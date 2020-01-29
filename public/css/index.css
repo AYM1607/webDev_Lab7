@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+.row {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+
+.column {
+    width: 45%;
+}
+
+.buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.selection-button {
+    height: 50px;
+    border: none;
+    width: 24%;
+}
+
+.selected-button {
+    background-color: lightgray;
+}
+
+.selection-button:hover {
+    cursor: pointer;
+}
+
+.comment-container {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: -10px 13px 18px -7px rgba(0,0,0,0.47);
+    -moz-box-shadow: -10px 13px 18px -7px rgba(0,0,0,0.47);
+    box-shadow: -10px 13px 18px -7px rgba(0,0,0,0.47);
+}
